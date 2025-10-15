@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CESAR School — Inovação e Aprendizado</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="CESAR School">
+        <img src="assets/img/logo.png" alt="Logotipo CESAR School" />
+        <span class="sr-only">CESAR School</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main" id="main" role="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="hero-title">CESAR School — criar, aprender e transformar</h1>
+          <p class="lead">Formação prática em tecnologia, design e inovação. Cursos curtos, projetos reais e mentoria.</p>
+          <a class="btn" href="#destaques">Conheça nossos destaques</a>
+        </div>
+        <div class="hero-media" aria-hidden="false">
+          <img src="assets/img/hero.jpg" alt="Alunos trabalhando em projeto de tecnologia" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques em cards -->
+    <section id="destaques" class="destaques container" aria-labelledby="destaques-title">
+      <h2 id="destaques-title">Destaques</h2>
+      <p class="small">Alguns cursos e iniciativas que fazemos com cuidado e vontade de aprender.</p>
+
+      <div class="cards">
+        <article class="card" aria-labelledby="card1-title">
+          <img src="assets/img/card1.jpg" alt="Imagem do curso de design" />
+          <h3 id="card1-title">Design de Produto</h3>
+          <p>Aprenda processos de pesquisa e prototipação com projetos reais.</p>
+          <a class="card-link" href="sobre.html#servicos">Ver mais</a>
+        </article>
+
+        <article class="card" aria-labelledby="card2-title">
+          <img src="assets/img/card2.jpg" alt="Imagem do curso de ADS" />
+          <h3 id="card2-title">Desenvolvimento Web</h3>
+          <p>HTML, CSS e práticas modernas para construir interfaces acessíveis.</p>
+          <a class="card-link" href="sobre.html#servicos">Ver mais</a>
+        </article>
+
+        <article class="card" aria-labelledby="card3-title">
+          <img src="assets/img/card3.jpg" alt="Imagem do laboratório de inovação" />
+          <h3 id="card3-title">Laboratório de Inovação</h3>
+          <p>Projetos interdisciplinares com empresas e ONGs locais.</p>
+          <a class="card-link" href="sobre.html#projetos">Ver mais</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="ano"></span> CESAR School — Aprendizado prático e colaborativo.</p>
+      <nav aria-label="Redes sociais">
+        <ul class="socials">
+          <li><a href="#" aria-label="Twitter CESAR School">Twitter</a></li>
+          <li><a href="#" aria-label="LinkedIn CESAR School">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // Pequenina melhora para preencher o ano (não é parte do trabalho, mas deixa o rodapé atualizado)
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
